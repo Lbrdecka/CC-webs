@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Counseling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="CARE Counseling Logo">
+            <h1>Compassionate care with research-supported strategies</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="counseling.html">Counseling</a></li>
+                <li><a href="trauma.html">Trauma Resolution</a></li>
+                <li><a href="neurocounseling.html">Neurocounseling</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <section id="home-banner">
+            <img src="6_domains.png" alt="6 Domains of Healthcare">
+            <p>Welcome to Care Counseling, where compassionate care meets research-supported strategies.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3><a href="counseling.html">Counseling</a></h3>
+                <p>Individual, Couples, Family, and Group counseling to support mental health and well-being.</p>
+            </div>
+            <div class="service">
+                <h3><a href="trauma.html">Trauma Resolution</a></h3>
+                <p>Specialized therapies to help resolve trauma and promote healing.</p>
+            </div>
+            <div class="service">
+                <h3><a href="neurocounseling.html">Neurocounseling</a></h3>
+                <p>Integrating neuroscience into counseling to enhance therapeutic outcomes.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:Lbrdecka@gmail.com">Lbrdecka@gmail.com</a></p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Care Counseling. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+#home-banner {
+    text-align: center;
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#home-banner img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+#services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 300px;
+}
+
+#contact {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-top: 10px;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#contact button {
+    padding: 10px;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
